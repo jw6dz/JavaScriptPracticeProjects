@@ -1,0 +1,89 @@
+.Quote__Logo {
+  height: 20vmin;
+  pointer-events: none;
+  margin: 1rem 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Quote__Logo {
+    animation: shake-animation infinite 1.5s;
+  }
+}
+
+.Quote {
+  background-color: white;
+}
+
+.Quote__Header {
+  font-size: 24px;
+  font-weight: 300;
+  padding: 1em 0rem;
+  margin: 0;
+}
+
+.Quote__ControlButtons {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Quote__Container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.QuoteCard {
+  display: flex;
+  border: .25rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: white;
+  height: 20vmin;
+  width: 80vmin;
+  flex-direction: column;
+  justify-content: center;
+  background-color: grey;
+  color: white;
+}
+
+.QuoteCard__QuotationMark {
+  font-size: 24px;
+  font-style: italic;
+  font-family: 'Segoe UI';
+  font-weight: 100;
+  color: white;
+}
+
+.QuoteCard__Meta {
+  padding-top: 1rem;
+  font-style: italic;
+}
+
+button.Quote__Button {
+  padding: 0.5rem 1rem;
+  border-radius: 1.25rem;
+  border-color: grey;
+  width: 20vmin;
+  background-color: cadetblue;
+  color:white;
+}
+
+button:focus.Quote__Button {
+  outline: none;
+}
+
+@keyframes shake-animation {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-30deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
+import QuotesHome from './components/TronaldQuotes/QuotesHome';
+
 import './App.css';
 
-function App() {
+const componentEnum = Object.freeze({
+  Home: 'Home',
+})
+
+const App = () => {
+  // Use activeComponent to manage which project to display (currently only 1 project: Tronald Quotes)
+  const [activeComponent, setActiveComponent] = useState(componentEnum.Home)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Todo: create top navigation bar */}
+      {activeComponent === componentEnum.Home && <QuotesHome/>}
     </div>
   );
 }

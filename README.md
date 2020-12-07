@@ -1,3 +1,8 @@
+# Purpose
+
+This project was built for some vanilla Javascript practice. 
+Current pages: Tronald Quotes, powered by tronalddump.io
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
